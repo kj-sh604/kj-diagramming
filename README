@@ -1,0 +1,10 @@
+this project is a fork of excalidraw v0.18.0.
+
+a majority of this software is derived from the excalidraw project.
+
+this is more so a personal build for my own use.
+
+how i like to build it:
+    --> NODE_ENV=production yarn build:app:docker
+    --> get the build files from excalidraw-app/build
+    --> host it somewhere
