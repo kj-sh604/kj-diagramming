@@ -17,9 +17,14 @@ import { ComicShannsFontFaces } from "./ComicShanns";
 import { EmojiFontFaces } from "./Emoji";
 import { ExcalifontFontFaces } from "./Excalifont";
 import { HelveticaFontFaces } from "./Helvetica";
+import { JetBrainsMonoFontFaces } from "./JetBrainsMono";
 import { LiberationFontFaces } from "./Liberation";
+import { LiberationMonoFontFaces } from "./LiberationMono";
+import { LiberationSerifFontFaces } from "./LiberationSerif";
 import { LilitaFontFaces } from "./Lilita";
 import { NunitoFontFaces } from "./Nunito";
+import { RobotoMonoFontFaces } from "./RobotoMono";
+import { AdwaitaSansFontFaces } from "./AdwaitaSans";
 import { VirgilFontFaces } from "./Virgil";
 import { XiaolaiFontFaces } from "./Xiaolai";
 
@@ -377,10 +382,15 @@ export class Fonts {
     init("Excalifont", ...ExcalifontFontFaces);
     // keeping for backwards compatibility reasons, uses system font (Helvetica on MacOS, Arial on Win)
     init("Helvetica", ...HelveticaFontFaces);
+    init("JetBrains Mono", ...JetBrainsMonoFontFaces);
     // used for server-side pdf & png export instead of helvetica (technically does not need metrics, but kept in for consistency)
     init("Liberation Sans", ...LiberationFontFaces);
+    init("Liberation Mono", ...LiberationMonoFontFaces);
+    init("Liberation Serif", ...LiberationSerifFontFaces);
     init("Lilita One", ...LilitaFontFaces);
     init("Nunito", ...NunitoFontFaces);
+    init("Roboto Mono", ...RobotoMonoFontFaces);
+    init("Adwaita Sans", ...AdwaitaSansFontFaces);
     init("Virgil", ...VirgilFontFaces);
 
     // fallback font faces
