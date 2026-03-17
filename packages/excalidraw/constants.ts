@@ -137,6 +137,11 @@ export const FONT_FAMILY = {
   "Lilita One": 7,
   "Comic Shanns": 8,
   "Liberation Sans": 9,
+  "Roboto Mono": 10,
+  "Liberation Mono": 11,
+  "Liberation Serif": 12,
+  "JetBrains Mono": 13,
+  "Adwaita Sans": 14,
 };
 
 export const FONT_FAMILY_FALLBACKS = {
