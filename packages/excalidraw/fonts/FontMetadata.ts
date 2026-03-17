@@ -102,6 +102,24 @@ export const FONT_METADATA: Record<number, FontMetadata> = {
     icon: FontFamilyCodeIcon,
     deprecated: true,
   },
+  [FONT_FAMILY["Roboto Mono"]]: {
+    metrics: {
+      unitsPerEm: 2048,
+      ascender: 1900,
+      descender: -500,
+      lineHeight: 1.2,
+    },
+    icon: FontFamilyCodeIcon,
+  },
+  [FONT_FAMILY["JetBrains Mono"]]: {
+    metrics: {
+      unitsPerEm: 1000,
+      ascender: 1020,
+      descender: -300,
+      lineHeight: 1.35,
+    },
+    icon: FontFamilyCodeIcon,
+  },
   [FONT_FAMILY["Liberation Sans"]]: {
     metrics: {
       unitsPerEm: 2048,
@@ -109,7 +127,34 @@ export const FONT_METADATA: Record<number, FontMetadata> = {
       descender: -434,
       lineHeight: 1.15,
     },
-    serverSide: true,
+    icon: FontFamilyNormalIcon,
+  },
+  [FONT_FAMILY["Liberation Mono"]]: {
+    metrics: {
+      unitsPerEm: 2048,
+      ascender: 1705,
+      descender: -615,
+      lineHeight: 1.15,
+    },
+    icon: FontFamilyCodeIcon,
+  },
+  [FONT_FAMILY["Liberation Serif"]]: {
+    metrics: {
+      unitsPerEm: 2048,
+      ascender: 1825,
+      descender: -443,
+      lineHeight: 1.15,
+    },
+    icon: FontFamilyNormalIcon,
+  },
+  [FONT_FAMILY["Adwaita Sans"]]: {
+    metrics: {
+      unitsPerEm: 2048,
+      ascender: 1984,
+      descender: -494,
+      lineHeight: 1.25,
+    },
+    icon: FontFamilyNormalIcon,
   },
   [FONT_FAMILY_FALLBACKS.Xiaolai]: {
     metrics: {
