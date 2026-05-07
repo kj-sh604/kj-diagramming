@@ -15,8 +15,8 @@ help:
 	@echo "  make build      build static assets into $(BUILD_DIR)"
 	@echo "  make clean      rm $(BUILD_DIR) (with checks)"
 	@echo "  make container  build kj-diagramming image"
-	@echo "  make serve      run $(CONTAINER_NAME) in daemon mode"
-	@echo "  make stop       stop $(CONTAINER_NAME)"
+	@echo "  make serve      run $(CONTAINER_NAME) (using $(CONTAINER_ENGINE))"
+	@echo "  make stop       stop $(CONTAINER_NAME) (if running on $(CONTAINER_ENGINE))"
 
 check-yarn:
 	@if ! command -v yarn >/dev/null 2>&1; then \
