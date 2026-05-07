@@ -8,3 +8,9 @@ how i like to build it:
     --> NODE_ENV=production yarn build:app:docker
     --> get the build files from excalidraw-app/build
     --> host it somewhere
+
+latest release: v0.18.1
+
+if you're viewing this on kj-git.com:
+    --> build.tag.gz  =  https://kj-media.online/files/kj-diagramming-v0-18-1
+    --> build.zip     =  https://kj-media.online/files/kj-diagramming-v0-18-1-zip
