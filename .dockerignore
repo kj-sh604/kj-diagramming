@@ -17,3 +17,7 @@
 **/build
 **/dist
 **/node_modules
+
+# include prebuilt app assets for static serving image
+!excalidraw-app/build/
+!excalidraw-app/build/**

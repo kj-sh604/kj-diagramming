@@ -1,19 +1,13 @@
-FROM node:18 AS build
+FROM ubuntu:22.04
 
-WORKDIR /opt/node_app
+WORKDIR /srv/www
 
-COPY . .
+RUN apt-get update \
+	&& apt-get install -y --no-install-recommends python3 \
+	&& rm -rf /var/lib/apt/lists/*
 
-# do not ignore optional dependencies:
-# Error: Cannot find module @rollup/rollup-linux-x64-gnu
-RUN yarn --network-timeout 600000
+COPY ./excalidraw-app/build/ /srv/www/
 
-ARG NODE_ENV=production
+EXPOSE 8000
 
-RUN yarn build:app:docker
-
-FROM nginx:1.27-alpine
-
-COPY --from=build /opt/node_app/excalidraw-app/build /usr/share/nginx/html
-
-HEALTHCHECK CMD wget -q -O /dev/null http://localhost || exit 1
+CMD ["python3", "-m", "http.server", "8000"]
