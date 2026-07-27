@@ -1,4 +1,4 @@
-this project is a fork of excalidraw v0.18.1
+this project is a fork of excalidraw v0.18.1-p1
 
 a majority of this software is derived from the excalidraw project.
 
@@ -9,9 +9,8 @@ how i like to build it:
     --> get the build files from excalidraw-app/build
     --> host it somewhere
 
-latest release: v0.18.1
+latest release: v0.18.1-p1
 
 if you're viewing this on kj-git.com:
-    --> build.tag.gz     =  https://kj-media.online/files/kj-diagramming-latest
-    --> build.zip        =  https://kj-media.online/files/kj-diagramming-latest-zip
+    --> build.tar        =  https://kj-media.online/files/kj-diagramming-latest
     --> github releases  =  https://github.com/kj-sh604/kj-diagramming/releases
