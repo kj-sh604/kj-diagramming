@@ -21,7 +21,7 @@ import { useCallbackRefState } from "@excalidraw/excalidraw/hooks/useCallbackRef
 import { t } from "@excalidraw/excalidraw/i18n";
 import {
   Excalidraw,
-  TTDDialogTrigger,
+  TTDDialog,
   CaptureUpdateAction,
   reconcileElements,
 } from "@excalidraw/excalidraw";
@@ -115,7 +115,6 @@ import DebugCanvas, {
   isVisualDebuggerEnabled,
   loadSavedDebugState,
 } from "./components/DebugCanvas";
-import { AIComponents } from "./components/AI";
 import { ExcalidrawPlusIframeExport } from "./ExcalidrawPlusIframeExport";
 import { isElementLink } from "@excalidraw/excalidraw/element/elementLink";
 
@@ -798,9 +797,7 @@ const ExcalidrawWrapper = () => {
           )}
         </OverwriteConfirmDialog>
         <AppFooter onChange={() => excalidrawAPI?.refresh()} />
-        {excalidrawAPI && <AIComponents excalidrawAPI={excalidrawAPI} />}
-
-        <TTDDialogTrigger />
+        {excalidrawAPI && <TTDDialog __fallback />}
         {isCollaborating && isOffline && (
           <div className="collab-offline-warning">
             {t("alerts.collabOfflineWarning")}
